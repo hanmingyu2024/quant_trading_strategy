@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Quantitative Trading Strategy System
 
 量化交易策略系统
@@ -16,3 +17,6 @@
 ## 安装步骤
 
 Coming soon...
+=======
+# quant_trading_strategy
+>>>>>>> ecc52949275cc2e88d7ad259a6373661a7f450a0
