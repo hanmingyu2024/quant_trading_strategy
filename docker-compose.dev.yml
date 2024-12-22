@@ -1,0 +1,20 @@
+# 开发环境特定配置
+version: '3.8'
+
+services:
+  backend:
+    volumes:
+      - ./backend:/app # 代码热重载
+    environment:
+      - DEBUG=1
+      - ENVIRONMENT=development
+    command: uvicorn app.main:app --reload --host 0.0.0.0
+
+  frontend:
+    volumes:
+      - ./frontend:/app # 代码热重载
+    command: npm run dev
+
+  postgres:
+    ports:
+      - "5432:5432" # 开发时暴露数据库端口

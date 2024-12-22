@@ -1,0 +1,20 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Quant Trading API",
+        "description": "API documentation for Quant Trading Strategy",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "description": "Returns a hello world message",
+                "responses": {
+                    "200": {
+                        "description": "Hello World"
+                    }
+                }
+            }
+        }
+    }
+}

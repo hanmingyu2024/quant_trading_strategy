@@ -1,0 +1,2 @@
+,id,ticket,symbol,order_type,volume,open_price,open_time,close_price,close_time,profit,swap,commission,stop_loss,take_profit,magic_number,comment,strategy_name,holding_time,risk_reward_ratio,market_trend,volatility,spread,signal_reason,indicators
+0,1,279128,SPT_DXY,BUY,0.05,106.939,2024-12-17 16:23:59.386060,107.0,2024-12-17 17:23:59.386060,3.05,-0.01,-0.5,106.889,107.039,234000,MA交叉信号,MA_RSI_Strategy,1.0,1.2200000000002102,上升趋势,0.02,81.0,MA20上穿MA50,"{""MA20"": 106.955, ""MA50"": 106.954, ""RSI"": 34.62}"

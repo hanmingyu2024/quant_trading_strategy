@@ -1,0 +1,28 @@
+[flake8]
+# 最大行长度
+max-line-length = 100
+
+# 忽略的错误码
+ignore = 
+    E203,  # whitespace before ':'
+    W503,  # line break before binary operator
+    F401   # imported but unused
+
+# 排除检查的目录
+exclude = 
+    .git,
+    __pycache__,
+    build,
+    dist,
+    *.egg-info,
+    .venv,
+    alembic
+
+# 每行最大复杂度
+max-complexity = 10
+
+# 文档字符串检查
+docstring-convention = google
+
+# 统计信息
+statistics = True

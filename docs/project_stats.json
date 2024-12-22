@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "generated_at": "2024-12-19T17:21:45.536975",
+    "project_name": "quant_trading_strategy",
+    "total_dirs": 66,
+    "total_files": 255
+  },
+  "file_types": {
+    ".yml": {
+      "count": 11,
+      "percentage": 4.3
+    },
+    ".py": {
+      "count": 146,
+      "percentage": 57.3
+    },
+    "(no extension)": {
+      "count": 10,
+      "percentage": 3.9
+    },
+    ".mako": {
+      "count": 1,
+      "percentage": 0.4
+    },
+    ".js": {
+      "count": 12,
+      "percentage": 4.7
+    },
+    ".ico": {
+      "count": 2,
+      "percentage": 0.8
+    },
+    ".html": {
+      "count": 4,
+      "percentage": 1.6
+    },
+    ".bat": {
+      "count": 1,
+      "percentage": 0.4
+    },
+    ".log": {
+      "count": 9,
+      "percentage": 3.5
+    },
+    ".ini": {
+      "count": 3,
+      "percentage": 1.2
+    },
+    ".txt": {
+      "count": 7,
+      "percentage": 2.7
+    },
+    ".yaml": {
+      "count": 4,
+      "percentage": 1.6
+    },
+    ".db": {
+      "count": 2,
+      "percentage": 0.8
+    },
+    ".md": {
+      "count": 11,
+      "percentage": 4.3
+    },
+    ".json": {
+      "count": 5,
+      "percentage": 2.0
+    },
+    ".jsx": {
+      "count": 9,
+      "percentage": 3.5
+    },
+    ".png": {
+      "count": 1,
+      "percentage": 0.4
+    },
+    ".tsx": {
+      "count": 4,
+      "percentage": 1.6
+    },
+    ".scss": {
+      "count": 5,
+      "percentage": 2.0
+    },
+    ".css": {
+      "count": 1,
+      "percentage": 0.4
+    },
+    ".ts": {
+      "count": 3,
+      "percentage": 1.2
+    },
+    ".conf": {
+      "count": 1,
+      "percentage": 0.4
+    },
+    ".csv": {
+      "count": 1,
+      "percentage": 0.4
+    },
+    ".cfg": {
+      "count": 1,
+      "percentage": 0.4
+    },
+    ".ps1": {
+      "count": 1,
+      "percentage": 0.4
+    }
+  },
+  "directory_structure": {
+    "root_dir": "I:\\quant_trading_strategy",
+    "directories": 66,
+    "files": 255
+  },
+  "file_extensions": {
+    "source_files": 146,
+    "documentation": 18,
+    "configuration": 12,
+    "other": 79
+  }
+}

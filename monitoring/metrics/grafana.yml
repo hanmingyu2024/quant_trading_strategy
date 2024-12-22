@@ -1,0 +1,38 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+
+dashboards:
+  - name: FastAPI监控
+    folder: ''
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards
+
+dashboardProviders:
+  - name: '默认'
+    orgId: 1
+    folder: ''
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /etc/grafana/provisioning/dashboards
+
+security:
+  adminUser: admin
+  adminPassword: admin
+
+server:
+  http_port: 3000
+
+auth:
+  disable_login_form: false
+  
+smtp:
+  enabled: false

@@ -1,0 +1,22 @@
+# 生产环境特定配置
+version: '3.8'
+
+services:
+  backend:
+    restart: always
+    environment:
+      - DEBUG=0
+      - ENVIRONMENT=production
+    command: gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker
+
+  frontend:
+    restart: always
+    command: npm run start
+
+  db:
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

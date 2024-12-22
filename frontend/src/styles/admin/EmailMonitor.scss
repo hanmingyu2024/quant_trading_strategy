@@ -1,0 +1,56 @@
+.email-monitor {
+    padding: 24px;
+
+    .ant-card {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+        &-head {
+            border-bottom: 2px solid #f0f0f0;
+        }
+    }
+
+    .ant-statistic {
+        .ant-statistic-title {
+            font-size: 14px;
+            color: #8c8c8c;
+        }
+
+        .ant-statistic-content {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .ant-progress {
+        &-text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    .queue-status {
+        margin-top: 24px;
+        padding: 16px;
+        background: #fafafa;
+        border-radius: 4px;
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .label {
+                color: #8c8c8c;
+            }
+
+            .value {
+                font-weight: 500;
+            }
+        }
+    }
+}

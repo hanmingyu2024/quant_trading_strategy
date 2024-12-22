@@ -1,0 +1,14 @@
+
+metrics:
+    enabled: true
+    port: 8000
+    path: /metrics
+
+apm:
+    enabled: true
+    service_name: quant_trading
+    server_url: http://localhost:8200
+
+logging:
+    level: INFO
+    file: logs/monitoring.log

@@ -1,0 +1,72 @@
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { tradesAPI } from '../services/api';
+
+const TradeForm = ({ onTradeSubmit }) => {
+  const [formData, setFormData] = useState({
+    symbol: '',
+    type: 'BUY',
+    amount: '',
+    price: '',
+    strategy: 'MANUAL'
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await tradesAPI.createTrade(formData);
+      onTradeSubmit(response.data);
+      setFormData({
+        symbol: '',
+        type: 'BUY',
+        amount: '',
+        price: '',
+        strategy: 'MANUAL'
+      });
+    } catch (error) {
+      console.error('交易提交失败:', error);
+    }
+  };
+
+  return (
+    <form className="trade-form" onSubmit={handleSubmit}>
+      <select
+        value={formData.symbol}
+        onChange={(e) => setFormData({...formData, symbol: e.target.value})}
+        required
+      >
+        <option value="">选择交易对</option>
+        <option value="BTC/USDT">BTC/USDT</option>
+        <option value="ETH/USDT">ETH/USDT</option>
+      </select>
+
+      <select
+        value={formData.type}
+        onChange={(e) => setFormData({...formData, type: e.target.value})}
+      >
+        <option value="BUY">买入</option>
+        <option value="SELL">卖出</option>
+      </select>
+
+      <input
+        type="number"
+        placeholder="数量"
+        value={formData.amount}
+        onChange={(e) => setFormData({...formData, amount: e.target.value})}
+        required
+      />
+
+      <input
+        type="number"
+        placeholder="价格"
+        value={formData.price}
+        onChange={(e) => setFormData({...formData, price: e.target.value})}
+        required
+      />
+
+      <button type="submit">提交交易</button>
+    </form>
+  );
+};
+
+export default TradeForm;
