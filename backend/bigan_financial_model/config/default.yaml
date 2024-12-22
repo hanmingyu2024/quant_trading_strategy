@@ -1,0 +1,43 @@
+# 基础配置
+data_path: "data"
+log_level: "INFO"
+
+# 交易对配置
+symbols: 
+  - "BTC-USD"
+  - "ETH-USD"
+
+# 时间周期配置
+timeframe: "1d"
+
+# 代理配置
+agents:
+  rl_config:
+    learning_rate: 0.001
+    gamma: 0.99
+    buffer_size: 10000
+    batch_size: 64
+    update_frequency: 4
+    target_update_frequency: 100
+    epsilon_start: 1.0
+    epsilon_end: 0.01
+    epsilon_decay: 0.995
+    
+  transformer_config:
+    n_layers: 4
+    n_heads: 8
+    d_model: 256
+    d_ff: 1024
+    dropout: 0.1
+    
+  lstm_config:
+    hidden_size: 128
+    num_layers: 2
+    dropout: 0.2
+
+# 风险管理配置
+risk_management:
+  max_position: 1.0
+  risk_per_trade: 0.02
+  max_drawdown: 0.1
+  max_volatility: 0.3 

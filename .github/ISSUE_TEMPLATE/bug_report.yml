@@ -1,0 +1,21 @@
+name: Bug 报告
+description: 提交 bug 报告
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您提交 bug 报告！
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请详细描述遇到的问题
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 如何复现这个问题？
+    validations:
+      required: true

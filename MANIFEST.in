@@ -1,0 +1,24 @@
+# 包含所有的 .txt 文件
+include *.txt
+
+# 包含 README.md 文件
+include README.md
+
+# 包含 docs 目录及其所有内容
+recursive-include docs *
+
+# 包含 src/static 目录下的所有 .png 文件
+recursive-include src/static *.png
+
+# 排除临时文件和目录
+exclude *.pyc
+exclude __pycache__
+
+# 包含特定的文件
+include examples/example.py
+
+# 递归包含特定类型的文件
+recursive-include templates *.html *.css
+
+# 包含除特定目录外的所有内容
+global-exclude *.log
