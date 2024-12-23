@@ -8,6 +8,11 @@ from pydantic import AnyHttpUrl, validator
 from pathlib import Path
 import logging
 from urllib.parse import quote_plus
+from dotenv import load_dotenv
+import os
+
+# 加载.env文件
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
@@ -25,11 +30,11 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     
     # 数据库配置
-    DB_HOST: str
-    DB_PORT: int
-    DB_USER: str
-    DB_PASSWORD: str
-    DB_NAME: str
+    DB_HOST: str = os.getenv("DB_HOST", "localhost")
+    DB_PORT: int = int(os.getenv("DB_PORT", "3306"))
+    DB_USER: str = os.getenv("DB_USER", "root")
+    DB_PASSWORD: str = os.getenv("DB_PASSWORD", "")
+    DB_NAME: str = os.getenv("DB_NAME", "test")
     
     # 数据库连接池配置
     DB_POOL_SIZE: int = 5
